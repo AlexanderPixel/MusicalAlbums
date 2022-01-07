@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/album_class.dir/Album.cpp.o CMakeFiles/album_class.dir/main.cpp.o CMakeFiles/album_class.dir/Song.cpp.o -o album_class 
