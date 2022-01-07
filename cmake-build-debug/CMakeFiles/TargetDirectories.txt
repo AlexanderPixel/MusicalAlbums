@@ -1,0 +1,3 @@
+/Users/aleksandrtkacenko/Desktop/album-class/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/aleksandrtkacenko/Desktop/album-class/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/aleksandrtkacenko/Desktop/album-class/cmake-build-debug/CMakeFiles/album_class.dir

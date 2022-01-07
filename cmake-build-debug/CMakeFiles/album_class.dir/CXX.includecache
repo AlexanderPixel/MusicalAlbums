@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aleksandrtkacenko/Desktop/album-class/Album.hpp
+Song.hpp
+/Users/aleksandrtkacenko/Desktop/album-class/Song.hpp
+iostream
+-
+
+/Users/aleksandrtkacenko/Desktop/album-class/Song.hpp
+iostream
+-
+
+/Users/aleksandrtkacenko/Desktop/album-class/main.cpp
+Album.hpp
+/Users/aleksandrtkacenko/Desktop/album-class/Album.hpp
+

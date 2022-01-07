@@ -1,21 +1,13 @@
-//
-//  Album.hpp
-//  Album Class
-//
-//  Created by Александр Ткаченко on 07.10.2020.
-//
-
 #pragma once
 #include "Song.hpp"
 #include <iostream>
-using namespace std;
 
 class Album
 {
 private:
     char * name;
     char * singer;
-    int capacity;
+    int capacity = 0;
     Song * songs = nullptr;
     
 public:
@@ -31,7 +23,7 @@ public:
     const char *GetSinger()const;
     void SetSinger(const char *s);
     
-    int GetCapacity();
+    int GetCapacity() const;
     
     void AddSong(const char* n, int dur);
     void DeleteSong(int Cell);

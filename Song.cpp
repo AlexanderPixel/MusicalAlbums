@@ -1,10 +1,3 @@
-//
-//  Song.cpp
-//  Album Class
-//
-//  Created by Александр Ткаченко on 07.10.2020.
-//
-
 #include "Song.hpp"
 
 Song::Song()
@@ -27,13 +20,13 @@ Song::~Song()
 
 Song::Song(const Song &obj)
 {
-    if(obj.name)
+    if (obj.name)
         name = new char[strlen(obj.name)+1];
-    if(obj.duration)
+    if (obj.duration)
         duration = obj.duration;
 }
 
-Song::Song(Song &&obj)noexcept
+Song::Song(Song &&obj) noexcept
 {
     name = obj.name;
     duration = obj.duration;
@@ -42,12 +35,12 @@ Song::Song(Song &&obj)noexcept
     obj.duration = 0;
 }
 
-const char* Song::GetName()const
+const char* Song::GetName() const
 {
     return name;
 }
 
-void Song::SetName(const char *n)
+void Song::SetName(const char* n)
 {
     delete [] name;
     if(n)
@@ -56,14 +49,14 @@ void Song::SetName(const char *n)
         name = nullptr;
 }
 
-int Song::GetDuration()const
+int Song::GetDuration() const
 {
     return duration;
 }
 
 void Song::SetDuration(int d)
 {
-    if(d>0)
+    if (d > 0)
         duration = d;
     else
         duration = 0;
@@ -71,7 +64,7 @@ void Song::SetDuration(int d)
 
 void Song::PrintInfo()
 {
-    cout<<"Song"<<endl;
-    cout<<"Name: "<<name<<endl;
-    cout<<"Duration: "<<duration<<endl;
+    std::cout << "Song" << std::endl;
+    std::cout << "Name: " << name << std::endl;
+    std::cout << "Duration: " << duration << std::endl;
 }

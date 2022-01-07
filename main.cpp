@@ -1,10 +1,9 @@
-#include <iostream>
 #include "Album.hpp"
-using namespace std;
 
 int main()
 {
-    Album a("Bohemian Rhapsody", "Queen");
-    a.AddSong("Another one bites the dust", 400);
+    Album a("A Night at the Opera", "Queen");
+    a.AddSong("Bohemian Rhapsody", 400);
+    a.AddSong("Love of My Life", 360);
     a.PrintInfo();
 }
